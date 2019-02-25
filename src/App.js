@@ -7,11 +7,15 @@ import About  from './Web/aboutme'
 // import Project  from './Web/project'
 import Contact  from './Web/contact'
 import Home  from './Web/index'
-
+// import { NavDropdown } from 'react-bootstrap'
 import  ContactList from './contactt/contacttlist'
 import  AddContact  from './contactt/addcontact'
 import  AddProject  from './project/projectlist'
 import  ProjectDeatil  from './project/details'
+import  LoginForm  from './components/LoginForm'
+import  SignupForm  from './components/SignUpForm'
+import  Main  from './components/Main'
+
 
 
 import './App.css';
@@ -38,10 +42,28 @@ const BaseLayout = () => (
         <a className="nav-link text-white animated fadeInDown delay-3s" href="/about/"><i className = "fa fa-user" > </i>   About</a>
       </li>
       <li className="nav-item active">
-        <a className="nav-link text-white animated fadeInDown delay-4s" href="/customer/"><i className = "fa fa-address-book" > </i>   Contact Us</a>
+        <a className="nav-link text-white animated fadeInDown delay-4s" href="/customer/"><i className = "fa fa-address-book" > </i>  Contact Us</a>
       </li>
-      <li className="nav-item active">
-        <a className="nav-link text-white animated fadeInDown delay-4s" href="/list/"><i className = "fa fa-address-book" > </i>List Of Conatct</a>
+      {/* <li className="nav-item active">
+        <a className="nav-link text-white animated fadeInDown delay-4s" href="/list/"><i className = "fa fa-address-book" > </i> List Of Conatct</a>
+      </li> */}
+      {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown" bg="light" text="white">
+        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+      </NavDropdown> */}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white " href="# " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i className = "fa fa-arrow-down" > </i>  Login/SigUp
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/login/">Login</a>
+          <a class="dropdown-item" href="/signup/">Sign Up</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/main/ ">Main</a>
+        </div>
       </li>
 
     </ul>
@@ -90,6 +112,9 @@ const BaseLayout = () => (
     <Route exact path='/project/:pk' component={ProjectDeatil}/>
 
     <Route path="/customer/" exact component={AddContact} />
+    <Route path="/login/" exact component={LoginForm} />
+    <Route path="/signup/" exact component={SignupForm} />
+    <Route path="/main/" exact component={Main} />
 
     {/* <Route path="/customer/" exact component={AddStudent} /> */}
 

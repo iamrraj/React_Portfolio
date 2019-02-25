@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Markdown from 'markdown-to-jsx';
 import axios from 'axios';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 // import CustomersService from './projectservice';
 
 // const customersService = new CustomersService();
@@ -109,6 +109,7 @@ async componentDidMount() {
  
     const {question} = this.state;
     if (question === null) return <p>Loading ...</p>;
+    if(question.image === null) return <img src=" " alt=" NoImageFound" ></img>
 
     return (
     
@@ -124,7 +125,7 @@ async componentDidMount() {
   <div className="row">
     <div className="col-md-5">
     <img className="card-img-top image" src={question.image} alt=""  />
-    <button className="btn btn-success btb text-white"> <Link to={question.link} className="text-white"> <i className="fa fa-eye" />  Project Demo </Link> </button>
+    <button className="btn btn-success btb text-white"> <a href={question.link} className="text-white"> <i className="fa fa-eye" />  Project Demo </a> </button>
     <button className="btn btn-dark btb"><a href={`question.github`} className="text-white"><i className="fa fa-github" />  Download Link </a> </button>
    
     </div>

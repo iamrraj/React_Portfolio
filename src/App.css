@@ -379,3 +379,25 @@ hr{
   margin-right: 20px;
   width: 190px;
 }
+
+/* Login And Signup */
+.login
+{
+  margin: 0 auto;
+  width: 500px;
+  margin-top: 50px;
+  background: silver;
+  padding: 30px;
+  border-radius: 8px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 4px 4px white;
+}
+.login input{
+  height: 50px;
+
+}
+
+.login button{
+  width: 200px;
+}
+
