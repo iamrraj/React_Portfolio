@@ -1,13 +1,20 @@
+Home Page Section And image i Used From Django Api
 ![Imgur](https://i.imgur.com/WbOKAB5.jpg)
 
+Home Page Deatils Section Deatils Is from Django Api
 ![Imgur](https://i.imgur.com/1N2hfRl.png)
 
+Project List Section  Using Django Api
 ![Imgur](https://i.imgur.com/dn6l4Av.png)
-
+ 
+Project Details Section Using Django Api
 ![Imgur](https://i.imgur.com/Xp65N6M.jpg)
 
+Project Reviews And Like Section Using Django Api
 ![Imgur](https://i.imgur.com/zUovNx5.png)
 
+
+Contact Form Setion Using Django Api
 ![Imgur](https://i.imgur.com/9ck7hmM.png)
 
 Login Section Using Django Api
