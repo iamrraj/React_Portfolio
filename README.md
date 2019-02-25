@@ -1,3 +1,23 @@
+![Imgur](https://i.imgur.com/WbOKAB5.jpg)
+
+![Imgur](https://i.imgur.com/1N2hfRl.png)
+
+![Imgur](https://i.imgur.com/dn6l4Av.png)
+
+![Imgur](https://i.imgur.com/Xp65N6M.jpg)
+
+![Imgur](https://i.imgur.com/zUovNx5.png)
+
+![Imgur](https://i.imgur.com/9ck7hmM.png)
+
+Login Section Using Django Api
+![Imgur](https://i.imgur.com/pF9b3Xl.png)
+
+Signup Section Using Django Api
+![Imgur](https://i.imgur.com/9sqGguW.png)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
